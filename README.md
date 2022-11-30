@@ -5,5 +5,5 @@
 # Made for non technical owner to easily customise food menu items with text document.
 
 # Note:
+## Main page: not yet optimized for mobile screens.
 ## Menu page: needs further styling.
-## Main page: not optimized for mobile screens yet.
