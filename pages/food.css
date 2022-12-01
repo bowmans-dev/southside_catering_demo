@@ -120,7 +120,6 @@ a {
   .column {
     width: 100%;
   }
-
   .footer {
     width: 90%;
     position: fixed;
@@ -128,9 +127,6 @@ a {
     overflow: hidden;
     
   }
-
-
-
   .floated-btn.whatsapp {
     visibility: hidden;
   }
