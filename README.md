@@ -11,16 +11,16 @@
 - **Food menu page:**<pre> Desktop & mobile responsive iframe grid menu      **√**</pre>
 
 ---
-#### Dev notes:
+##### Dev notes:
 
-#### Ref: Home Page
+##### Ref: Home Page
 #### Context: (Images)
 - Cite unsplash photographer names here 
 - Add alt tags
 - Provide alternative image sizes for viewing on smaller devices with srcset attribute
 - Find and use appropriate url for svg logo to replace current inline button whatsapp svg code implementation
 
-#### Ref: Menu Page: 
+##### Ref: Menu Page: 
 #### Context: (Iframes) 
 - Suggestion - Replace iframe method with a revised lighterweight alternative
 ###### else:
@@ -34,8 +34,9 @@
 
 ---
 #### Context: (Revisiting The Home Page)
-- Use etags to control cache updates & invalidation for dynamic assets  
+- Add etags - write cache updates & invalidation logic for dynamic assets  
 
-- Check to see **if cache is still valid**
-###### else `if (new content has been updated when the user revisits the Home page)`
-- `Preload` new iframe data **`before`** user has visited the Food Menu(iframe page) - Then invalidate and update users cache
+`if new content has been updated when the user revisits the Home page`
+
+- `Preload` new iframe data **`before`** user has visited the Food Menu(iframe page) 
+- invalidate stale data and update cache  
