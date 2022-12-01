@@ -5,7 +5,7 @@
 - Design purposed for non technical owner to easily customise menu items using a text document.
 ---
 ## In order to view the current state of the design process... (Currently Desktop Only): 
-#### Please fork the repo or download zip and run locally to view in the browser.
+#### clone repo or download zip and run locally to view in the browser.
 
 - **Home page:**<pre> Not yet optimized for mobile                      **X**</pre>
 - **Food menu page:**<pre> Desktop & mobile responsive iframe grid menu      **√**</pre>
@@ -27,17 +27,15 @@
 - Move iframe script into js file in directory or separate working folder to decouple from clientside logic
 
 --- 
-#### Subject: Static and Dynamic Asset loading optimizations using cache control:
+#### Subject: Static and dynamic asset loading optimizations using cache control:
 
-#### Context: On 1st Time (Initial Page Load)
-- Lazy load static assets
-
----
-#### Context: On 2nd Home Page: (Revisiting Page Load):
-- Use etags to control cache updates with invalidation for evolving dynamic assets  
+#### Context: (Initial Page Load)
+- `Lazy load` static assets
 
 ---
-#### Context: On Every (Future Home Page Load):
+#### Context: (Revisiting The Home Page)
+- Use etags to control cache updates & invalidation for dynamic assets  
+
 - Check to see **if cache is still valid**
-###### else if not valid (new content has been updated) when revisiting Home page
-- preload new iframe data **`before`** user visits the Food Menu(iframe page) - update & invalidate cache 
+###### else `if (new content has been updated when the user revisits the Home page)`
+- `Preload` new iframe data **`before`** user has visited the Food Menu(iframe page) - Then invalidate and update users cache
