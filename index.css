@@ -217,8 +217,9 @@ a {
   .welcome_text {
     word-wrap: break-word;
     transform: translateY(170px) translateX(-35px);
-    z-index: 20;
-    text-align: center;
+    z-index: 36;
+    text-align: left;
+    margin-left: 40px;
   }
   .join-us-section {
     transform: translateY(180px);
@@ -244,7 +245,7 @@ a {
     font-size: 20px;
   }
   .welcome_text {
-    font-size: 28px;
+    font-size: 40px;
     /* text-align: right; */
     text-align: center;
   } 
