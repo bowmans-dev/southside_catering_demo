@@ -241,10 +241,10 @@ a {
 @media screen and (max-width: 530px) {
 
   .join-us-section {
-    font-size: 24px;
+    font-size: 20px;
   }
   .welcome_text {
-    font-size: 36px;
+    font-size: 28px;
     /* text-align: right; */
     text-align: center;
   } 
@@ -258,7 +258,7 @@ a {
     transform: translateY(100px) translateZ(1px) scale(1.5);
   }
   .as-we-begin-section {
-    font-size: 10px;
+    font-size: 11px;
     height: 530px;
     z-index: -1;
     transform: translateY(-30vh) translateZ(1px) scale(1.5);
@@ -267,6 +267,10 @@ a {
 }
 
  @media screen and (max-width: 440px) {
+
+  .welcome_text {
+    font-size: 25px;
+  } 
 
   .a-brand-new-service_backdrop {
     max-width: 400px;
@@ -289,7 +293,7 @@ a {
     transform: translateY(100px) translateZ(1px) scale(1.5);
   }
   .as-we-begin-section {
-    font-size: 8px;
+    font-size: 12px;
     height: 430px;
     z-index: -1;
     transform: translateY(-30vh) translateZ(1px) scale(1.5);
@@ -300,8 +304,9 @@ a {
 @media screen and (max-width: 370px) {
 
   .welcome_text {
-    font-size: 36px;
-    text-align: center;
+    font-size: 25px;
+    /* text-align: center; */
+    margin-left: 50px;
   }
   .a-brand-new-service_backdrop {
     max-width: 400px;
@@ -316,12 +321,13 @@ a {
   .join-us-section {
     height: 300px;
     transform: translateY(190px)
+
   }
   .image {
     background-position: center;
-    transform: translateZ(-1px) scale(1.5);
+    transform: translateZ(-1px) scale(1.8);
     height: 100vh;
-    height:100%; width:auto; 
+    /* height:100%; width:auto;  */
   }
   .getting-ready_text {
     font-size: 10px;
@@ -342,8 +348,9 @@ a {
 
 @media screen and (max-width: 326px) {
   .welcome_text {
-    font-size: 24px;
+    font-size: 25px;
     text-align: center;
+    margin-left: 45px;
   }
   .join-us-section {
     height: 300px;
@@ -361,11 +368,16 @@ a {
     transform: translateX(10px) translateY(120px) translateZ(1px) scale(1.5);
   }
   .as-we-begin-section {
-    font-size: 7px; 
+    font-size: 12px; 
+    transform: translateY(-165px);
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
+  .welcome_text {
+    font-size: 23px;
+    text-align: left;
+  }
   .join-us-section {
     height: 300px;
     /* font-size: small; */
@@ -379,4 +391,36 @@ a {
     margin-right: 10px;
     word-break: keep-all;
   }
+}
+
+@media screen and (max-width: 280px) {
+  .welcome_text {
+    font-size: 21px;
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 266px) {
+  .welcome_text {
+    font-size: 20px;
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 254px) {
+  .welcome_text {
+    font-size: 18px;
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 236px) {
+  .welcome_text {
+    font-size: 16px;
+    text-align: left;
+  }
+
 }
