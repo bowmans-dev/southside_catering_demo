@@ -34,8 +34,9 @@ section {
   background-position: center;
   transform: translateZ(-1px) scale(2);
   background-size: cover;
-  z-index: -1;
+  z-index: 0;
   height: 100vh;
+
 }
 
 .footer-image {
@@ -51,17 +52,17 @@ section {
   word-break: keep-all;
   position: static;
   color: white;
-  transform: translateY(100px);
+  transform: translateY(160px) translateX(-160px);
   text-align: right;
   white-space: nowrap;
 }
 
-
 .join-us-section {
   height: 300px;
-  font-size: 28px;
+  font-size: 24px;
   --bg: #c8c8bc; 
   padding-left: 10px;
+  transform: translateY(150px);
 }
 
 .a-brand-new-service_backdrop {
@@ -76,10 +77,10 @@ section {
 .a-brand-new-service_text {
   text-align: left; 
   margin-left: 10px;
+  margin-right: 130px;
   word-break: keep-all;
   font-size: 30px;
 }
-
 
 .getting-ready_text {
   color: white;
@@ -93,7 +94,7 @@ section {
 }
 
 .as-we-begin-section {
-  font-size: 12px;
+  font-size: 13px;
   height: 530px;
   z-index: -1;
   transform: translateY(-30vh) translateZ(1px) scale(1.5);
@@ -135,13 +136,13 @@ a {
   text-decoration: none;
 }
 
-.floated-btn.whatsapp {
+.floating-contact-btn.whatsapp {
+  position: fixed;
   background: #25D366;
   width: 150px;
   height: 60px;
   border: 0;
   border-radius: 20px;
-  position: fixed;
   float: right;
   bottom: 15px;
   right: 10px;
@@ -151,97 +152,79 @@ a {
   -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
 }
-.floated-btn.whatsapp span {
+.floating-contact-btn.whatsapp span {
   position: absolute;
   top: 50%;
   left: 50px;
   transform: translateY(-50%);
   color: #fff;
 }
-.floated-btn.whatsapp .southside-asset{
+.floating-contact-btn.whatsapp .southside-asset{
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
 }
-.floated-btn.whatsapp .southside-asset svg {
+.floating-contact-btn.whatsapp .southside-asset svg {
   width: 30px;
   height: 30px;
   fill: #ffffff;
 }
 
-@media screen and (max-width: 1046px) {
-
-  .welcome_text {
-    font-size: 32px;
-    word-break: keep-all;
-    position: static;
-    text-align: left;
-    white-space: initial;
-  }
-
-}
-
-@media screen and (max-width: 960px) {
-
-  .welcome_text {
-    font-size: 28px;
-    word-wrap: break-word;
-  }
-
-}
-
-
-@media screen and (max-height: 740px) {
-  .join-us-section {
-    height: 300px;
-    font-size: 28px;
-    --bg: #c8c8bc; 
-    transform: translateY(-70px);
-    padding-left: 10px;
-  }
-  
-}
-
 @media screen and (max-width: 800px) {
-
-  .welcome_text {
-    font-size: 24px;
-    word-wrap: break-word;
-    transform: translateY(120px);
+  .header-image {
+    z-index: -0;
   }
-
+  .welcome_text {
+    word-wrap: break-word;
+    transform: translateY(170px) translateX(-25px);
+    z-index: 1;
+    text-align: center;
+  }
+  .join-us-section {
+    transform: translateY(170px);
+  }
   .column {
     width: 100%;
   }
-
   .footer {
-    border: solid #294558 4px;
-    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
     width: 90%;
     position: fixed;
     bottom: 0;
-    overflow: hidden;
-    
+    overflow: hidden; 
+    border: solid #294558 4px;
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2); 
   }
-  .floated-btn.whatsapp {
+  .floating-contact-btn.whatsapp {
     visibility: hidden;
   }
-  .floated-btn.whatsapp span {
+  .floating-contact-btn.whatsapp span {
     visibility: hidden;
   }
-  .floated-btn.whatsapp .southside-asset{
+  .floating-contact-btn.whatsapp .southside-asset{
     visibility: hidden;
   }
-  .floated-btn.whatsapp .southside-asset svg {
+  .floating-contact-btn.whatsapp .southside-asset svg {
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 600px) {
-
-
+  .header-image {
+    z-index: 0;
+  }
+  .welcome_text {
+    word-wrap: break-word;
+    transform: translateY(170px) translateX(-35px);
+    z-index: 20;
+    text-align: center;
+  }
+  .join-us-section {
+    transform: translateY(180px);
+    z-index: 0;
+    font-size: 24px;
+  }
   .a-brand-new-service_backdrop {
    max-width: 600px;
   }
@@ -250,34 +233,150 @@ a {
     font-size: 30px;   
     overflow:inherit
   }
-
+  .as-we-begin-section {
+    font-size: 12px;
+  }
 }
 
+@media screen and (max-width: 530px) {
 
-@media screen and (max-width: 480px) {
-
-  .welcome_text {
-    font-size: 18px;
-    text-align: left;
-    word-break: break;
-    word-wrap: break-word;
+  .join-us-section {
+    font-size: 24px;
   }
-
+  .welcome_text {
+    font-size: 36px;
+    /* text-align: right; */
+    text-align: center;
+  } 
+  .a-brand-new-service_text {
+    font-size: 30px;  
+    margin-right: 70px;
+  }
+  .getting-ready_text {
+    text-align: center;
+    /* font-size: 14px; */
+    transform: translateY(100px) translateZ(1px) scale(1.5);
+  }
+  .as-we-begin-section {
+    font-size: 10px;
+    height: 530px;
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
+    --bg: #384558;
+  }
 }
-@media screen and (max-width: 420px) {
 
-  .welcome_text {
-    font-size: 14px;
-    text-align: right;
-    word-wrap: break-word;
-    padding-left: 40px;
-  }
+ @media screen and (max-width: 440px) {
 
   .a-brand-new-service_backdrop {
-    max-width: 600px;
+    max-width: 400px;
+    height: 900px; 
+  }
+  .a-brand-new-service_text {   
+    text-align: left; 
+    margin-left: 10px;
+    word-break: keep-all;
+  }
+  .image {
+    background-position: center;
+    transform: translateZ(-1px) scale(1.5);
+    height: 100vh;
+    height:100%; width:auto; 
+  }
+  .getting-ready_text {
+    text-align: center;
+    font-size: 12px;
+    transform: translateY(100px) translateZ(1px) scale(1.5);
+  }
+  .as-we-begin-section {
+    font-size: 8px;
+    height: 430px;
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
+    --bg: #384558;
+  }
+} 
+
+@media screen and (max-width: 370px) {
+
+  .welcome_text {
+    font-size: 36px;
+    text-align: center;
+  }
+  .a-brand-new-service_backdrop {
+    max-width: 400px;
+    height: 800px; 
+  }
+  .a-brand-new-service_text {  
+    text-align: left; 
+    margin-left: 10px;
+    margin-right: 10px;
+    word-break: keep-all;
+  }
+  .join-us-section {
+    height: 300px;
+    transform: translateY(190px)
+  }
+  .image {
+    background-position: center;
+    transform: translateZ(-1px) scale(1.5);
+    height: 100vh;
+    height:100%; width:auto; 
+  }
+  .getting-ready_text {
+    font-size: 10px;
+    transform: translateX(10px) translateZ(1px) scale(1.5);
+  }
+  .footer { 
+    min-width: 60%;
+    width: 70%;
+    height: 10%;
+    max-height: 50px;  
+  }
+  a {
+    color: white;
+    font-size: 18px; 
+    text-decoration: none;
+  }
+} 
+
+@media screen and (max-width: 326px) {
+  .welcome_text {
+    font-size: 24px;
+    text-align: center;
+  }
+  .join-us-section {
+    height: 300px;
+    font-size: 20px;
+  }
+  .a-brand-new-service_backdrop {
+    height: 400px; 
   }
   .a-brand-new-service_text {
-    text-align: left; 
-    font-size: 30px;   
+    font-size: 20px;   
+    margin-right: 10px;
+    word-break: keep-all;
+  }
+  .getting-ready_text {
+    transform: translateX(10px) translateY(120px) translateZ(1px) scale(1.5);
+  }
+  .as-we-begin-section {
+    font-size: 7px; 
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .join-us-section {
+    height: 300px;
+    /* font-size: small; */
+  }
+  .a-brand-new-service_backdrop {
+    max-width: 600px;
+    height: 400px; 
+  }
+  .a-brand-new-service_text {
+    font-size: 20px;   
+    margin-right: 10px;
+    word-break: keep-all;
   }
 }

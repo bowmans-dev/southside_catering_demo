@@ -4,9 +4,6 @@
 - Made to be simple & adaptable to changing context & business requirements.
 - Design purposed for non technical owner to easily customise menu items using a text document.
 ---
-## To view the current state of the design: 
-#### Run locally to view in the browser.
-
 - **Home page:**<pre> Not yet optimized for mobile                      **X**</pre>
 - **Food menu page:**<pre> Desktop & mobile responsive iframe grid menu      **√**</pre>
 
