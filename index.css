@@ -202,13 +202,13 @@ a {
 
 @media screen and (max-width: 530px) {
 
-  .join-us-section {
-    font-size: 20px;
-  }
   .welcome_text {
     font-size: 35px;
     margin-left: 50px;
   } 
+  .join-us-section {
+    font-size: 20px;
+  }
   .a-brand-new-service_text { 
     margin-right: 70px;
   }
