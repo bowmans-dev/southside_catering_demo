@@ -1,105 +1,174 @@
+html {
+  border-radius: 25px;
+  margin: 5px;
+}
+
 html,
 body {
-  background-color: black;
+  background-color: #638a87;
   font-family: sans-serif;
-  text-shadow: 1px 1px 3px black; 
+  z-index: -6; 
 }
 
 .container {
   height: 100vh;
-  overflow: hidden;
   overflow-y: auto;
-  perspective: 3px;
+  overflow-x: hidden;
 }
 
-section {
-  color: white;
-  background-color: var(--bg, --color-black);
+.image-one {
+  background-image: url(./images/image-1.jpg);
+  background-position: center;
+  transform: translateZ(-1px);
   background-size: cover;
+  z-index: 0;
+  height: 100vh;
+  border-radius: 25px;
+  margin: 5px;
+  border: solid white 2px;
+}
+
+.image-two {
+  background-image: url(./images/image-2.jpg);
+  background-position: center;
+  z-index: 0;
+  height: 100vh;
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
- 
-.image {
   background-position: center;
-  transform: translateZ(-1px) scale(1.5);
-  z-index: -1;
-  height: 100vh;
-  max-width: 100%;
+  transform: translateY(-60px) translateZ(-1px);
+  background-size: cover;
+  margin: 5px;
+  border-radius: 25px;
 }
 
-.header-image {
-  background-image: url(./images/image-1.jpg);
+.image-three {
+  background-image: url(./images/image-3.jpg);
   background-position: center;
-  transform: translateZ(-1px) scale(2);
+  z-index: 0;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  transform: translateY(-100px) translateZ(-1px);
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.image-four {
+  background-image: url(./images/image-4.jpg);
+  background-position: center;
   background-size: cover;
   z-index: 0;
   height: 100vh;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100px) translateZ(-1px);
+  border-radius: 25px;
 }
 
-.footer-image {
-  background-position: center;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: cover;
-  z-index: -3;
-  height: 100vh;
-}
-
-.welcome_text {
-  font-size: 40px;
+.image_welcome_text {
+  visibility: hidden;
+  color: white;
+  white-space: nowrap;
+  font-size: 27px;
+  text-align: right;
   word-break: keep-all;
   position: static;
+  transform: translateX(-160px);
+  text-shadow: 1.5px 0px 1px black;
+}
+
+.header_welcome_text {
   color: white;
-  transform: translateY(160px) translateX(-160px);
-  text-align: right;
   white-space: nowrap;
+  font-size: 40px;
+  text-align: right;
+  word-break: keep-all;
+  position: static;
+  transform: translateY(-40px) translateX(-160px);
+  text-shadow: 4px 2px 30px black;
 }
 
 .join-us-section {
-  height: 300px;
-  font-size: 24px;
-  --bg: #c8c8bc; 
+  z-index: 0;
+  color: white;
+  height: 140px;
+  font-size: 17px;
+  --bg: #c8c8bc90; 
   padding-left: 10px;
-  transform: translateY(150px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid white 2px;
+  border-radius: 25px;
+  margin: 20px;
+  background-size: cover;
+  background-color: var(--bg, --color-black);
+  transform: translateY(-60px);
+  text-shadow: 1.5px 0px 1px black;
 } 
 
 .a-brand-new-service_backdrop {
-  height: 600px;
+  z-index: 1;
+  height: 500px;
   max-width: 1380px;  
-  --bg: #638a87 ;
   border: solid #638a87 10px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  transform: translateY(-80px);
   margin-right: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  --bg: #638a87 ;
+  background-color: var(--bg, --color-black);
+  transform: translateY(-100px);
 }
+
 .a-brand-new-service_text {
+  color: white;
   text-align: left; 
   margin-left: 10px;
   margin-right: 130px;
   word-break: keep-all;
-  font-size: 30px;
+  font-size: 22px;
+  text-shadow: 1.5px 0px 1px black;
 }
 
 .getting-ready_text {
-  color: white;
-  text-align: center;
+  z-index: 1;
   font-size: 16px;
-  height: 300px;
-  margin-bottom: 0;
-  margin-right: 30px;
-  z-index: -1;
-  transform: translateY(100px) translateZ(1px) scale(1.5);
-}
+} 
 
 .as-we-begin-section {
-  font-size: 13px;
-  height: 530px;
-  z-index: -1;
-  transform: translateY(-30vh) translateZ(1px) scale(1.5);
-  --bg: #384558;
+  z-index: 0;
+  color: white;
+  height: 380px;  
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 20px;
+  --bg: #638a87;
+  background-color: var(--bg, --color-black);
+  transform: translateZ(1px) scale(1.5);
+  outline: #294558 5px;
+  text-shadow: 2px 2px 63px rgb(255, 255, 255);
+  text-shadow: 1.5px 1px 1px black;
 }
 ul {
   list-style: none;
@@ -118,18 +187,17 @@ ul li::before {
   color: white;
   border-radius: 25px;
   min-width: 60%;
-  width: 30%;
-  height: 10%;
+  width: 60%;
+  height: 5%;
   max-height: 50px;
   display: flex; 
-  position: absolute;
+  position: relative;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   padding-bottom: 20px;
   padding-right: 10px;
-  margin: 10px; 
-  margin-right: 40px;
+  margin: 20px; 
 }
 a {
   color: white;
@@ -138,6 +206,7 @@ a {
 }
 
 .floated-btn.whatsapp {
+  z-index: 999;
   width: 150px;
   height: 45px;
   border-radius: 20px; 
@@ -147,222 +216,238 @@ a {
   bottom: 10px;
   right: 10px;
   display: block;
-  z-index: 999;
   font-weight: 500;
-  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 800px) {
-  .header-image {
-    z-index: -0;
+  .image-one {
+    border-radius: 25px;
+    transform: translateY(50px);
   }
-  .welcome_text {
-    word-wrap: break-word;
-    transform: translateY(170px) translateX(-25px);
+  .image_welcome_text {
+    visibility: visible;
+    margin-left: 30px;
+  }
+  .header_welcome_text {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .image_welcome_text {
     z-index: 1;
+    word-wrap: break-word;
     text-align: center;
+    margin-left: 60px;
+    transform: translateY(140px) translateX(-25px);
   }
+
+  .header_welcome_text {
+    z-index: 1;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: 60px;
+    transform: translateX(-25px);
+  }
+
   .join-us-section {
-    transform: translateY(170px);
+    font-size: 14;
   }
-  .column {
-    width: 100%;
+
+  .a-brand-new-service_text { 
+    margin-right: 70px;
   }
+
+  .as-we-begin-section {
+    font-size: 14px; 
+  }
+
   .footer {
-    width: 90%;
-    position: fixed;
+    min-width: 60%;
+    position: absolute;
     bottom: 0;
     overflow: hidden; 
     border: solid #294558 4px;
     -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.2); 
   } 
+
   .floated-btn.whatsapp {
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .header-image {
+  .image-one {
     z-index: 0;
   }
   .join-us-section {
-    z-index: 0;
-    font-size: 24px;
-  }  
-  .a-brand-new-service_text {   
-    margin-right: 100px;
-    overflow:inherit;
-  }  
-  .as-we-begin-section {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .getting-ready_text {
+    font-size: 15px;
   } 
+  .as-we-begin-section {
+    font-size: 14px;  
+  }
+  .a-brand-new-service_text { 
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 530px) {
 
-  .welcome_text {
-    font-size: 35px;
-    margin-left: 50px;
-  } 
-  .join-us-section {
+  .image_welcome_text {
+    font-size: 24px;
+  }
+  .header_welcome_text {
     font-size: 20px;
   }
-  .a-brand-new-service_text { 
-    margin-right: 70px;
-  }
   .as-we-begin-section {
-    font-size: 10px;
-    height: 530px;
-    z-index: -1;
-    transform: translateY(-30vh) translateZ(1px) scale(1.5);
-    --bg: #384558;
+    font-size: 11.5px;  
   }
-  .getting-ready_text {
-    font-size: 10px;
-  } 
-}
-
-@media screen and (max-width: 465px) {
-  
-  .welcome_text {
-    margin-left: 47px;
-  }
-  .a-brand-new-service_text { 
-    font-size: 28px;
-  }
-  .as-we-begin-section {
-    font-size: 9px;
+  .footer { 
+    height: 10%;
+    max-height: 50px;
+    margin: 20px; 
+    min-width: 69%;
+    width: 69%; 
   }
 }
 
 @media screen and (max-width: 440px) {
-  
-  .welcome_text {
-    font-size: 32px;
-    text-align: center;
-    margin-left: 20px;
-  } 
+
   .a-brand-new-service_backdrop {
     max-width: 400px;
+    height: 500px; 
   }
   .a-brand-new-service_text { 
-    font-size: 26px;
+    font-size: 22px;
     margin-right: 30px;
   }
-  .getting-ready_text {
-    font-size: 8px;
-  } 
   .as-we-begin-section {
-    font-size: 8px;
-    height: 430px;                                                         
-  } 
+    font-size: 11px;  
+  }
+  .footer { 
+    min-width: 69%;
+    width: 69%;
+  }
 } 
-
 @media screen and (max-width: 400px) {
-
-  .welcome_text {
-    font-size: 28px;
+  
+  .image_welcome_text {
+    font-size: 16px;
+  }
+  .header_welcome_text {
+    font-size: 18px;
     margin-left: 30px;
   }
+  .getting-ready_text {
+    font-size: 10px;
+  } 
 }
 
 @media screen and (max-width: 370px) {
 
   .a-brand-new-service_backdrop {
-    height: 650px; 
+    height: 450px; 
   }
   .a-brand-new-service_text { 
-    font-size: 26px; 
+    font-size: 20px; 
     margin-right: 28px;
-  }
-  .as-we-begin-section {
-    font-size: 7px;
-    height: 300px;
-  }
-  .footer { 
-    min-width: 60%;
-    width: 80%;
-    height: 10%;
-    max-height: 50px;  
   }
 }
 @media screen and (max-width: 345px) {
-  .welcome_text {
-    margin-left: 26px;
-    font-size: 28px;
+  .image_welcome_text {
+    font-size: 16px;
+  }
+  .header_welcome_text {
+    font-size: 17px;
   }
   .join-us-section {
-    font-size: 20px;
+    font-size: 12px;
   }
   .a-brand-new-service_backdrop {
     height: 400px; 
   }
   .a-brand-new-service_text {
-    font-size: 20px;
     margin-right: 5px;
   }
 }
-
-@media screen and (max-width: 333px) {
-  .welcome_text {
-    font-size: 23px;
+@media screen and (max-width: 330px) {
+  .image_welcome_text {
+    font-size: 15px;
+  }
+  .header_welcome_text {
+    font-size: 16px;
   }
   .join-us-section {
-    font-size: 17px;
+    font-size: 12px;
   }
   .a-brand-new-service_backdrop {
     width: 90%;
-  } 
-    
-  .as-we-begin-section {
-    font-size: 5.5px;
-    height: 280px;
   }
+  .getting-ready_text {
+    font-size: 12px;
+  } 
+  .as-we-begin-section {
+    font-size: 9px;
+  }   
 }
 
 @media screen and (max-width: 286px) {
-  .welcome_text {
+  .image_welcome_text {
+    font-size: 15px;
+  }
+  .header_welcome_text {
     font-size: 21px;
   }
   .join-us-section {
-    font-size: 15px;
+    font-size: 11px;
   }
-   .a-brand-new-service_text {
-    font-size: 18px;
-  }
+  
 }
-
 @media screen and (max-width: 266px) {
-  .welcome_text {
-    font-size: 20px;
+  .image_welcome_text {
+    font-size: 12px;
+  }
+  .header_welcome_text {
+    font-size: 14px;
   }
   .join-us-section {
-    font-size: 14px;
+    font-size: 10px;
+  }
+  .as-we-begin-section {
+    font-size: 8px;
+    height: 280px;
   }
 }
 @media screen and (max-width: 254px) {
-  .welcome_text {
-    font-size: 18px;
+  .header_welcome_text {
+    font-size: 14px;
   }
   .a-brand-new-service_text {
     font-size: 16px;
     padding-right: 30px;
   }
   .join-us-section {
-    font-size: 13px;
+    font-size: 9px;
   }
 }
 @media screen and (max-width: 236px) {
-  .welcome_text {
+  .header_welcome_text {
     font-size: 16px;
   }
   .join-us-section {
-    font-size: 11px;
+    font-size: 8px;
   }
   .a-brand-new-service_text {
-    font-size: 16px;
+    font-size: 14px;
     padding-right: 10px;
+  }
+  .as-we-begin-section {
+    font-size: 7.5px;
+    height: 280px;
   }
 }
