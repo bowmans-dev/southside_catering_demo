@@ -1,6 +1,6 @@
 ## Work in progress:
 ## Southside-Catering Home & Menu Pages 
-- A mock up layout, working with the functional needs for the Southside-Catering Home & Menu pages.
+- A mock up layout, working with the functional requirements of the Southside-Catering Home & Menu pages.
 - Made to be simple & adaptable to changing context & business requirements.
 - Design is purposed to enable instantly swappable menu items and live announcements.
 - This is being demonstrated by editing text document menus for the dedicated iframes.
