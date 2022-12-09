@@ -4,5 +4,4 @@ const food = document.querySelectorAll('iframe').forEach( item =>
     item.contentWindow.document.body.style = "color: white; font-size: 18px;"
     )
   )
-
 module.exports = food;
