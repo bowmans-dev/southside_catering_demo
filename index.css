@@ -5,7 +5,8 @@ html {
 
 html,
 body {
-  background-color: #638a87;
+  background-color: rgb(40, 40, 40);
+  /* background-color: #638a87; */
   font-family: sans-serif;
   z-index: -6; 
 }
@@ -25,8 +26,10 @@ body {
   height: 100vh;
   border-radius: 25px;
   margin: 5px;
-  border: solid white 2px;
+  border: solid #9f774d 2px;
 }
+
+
 
 .image-two {
   background-image: url(./images/image-2.jpg);
