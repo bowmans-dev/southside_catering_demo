@@ -76,6 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: translateY(100px) translateZ(-1px);
+  border: solid #9f774d 2px;
   border-radius: 25px;
 }
 
@@ -113,7 +114,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid white 2px;
+  border: solid #9f774d 2px;
   border-radius: 25px;
   margin: 20px;
   background-size: cover;
@@ -126,7 +127,7 @@ body {
   z-index: 1;
   height: 500px;
   max-width: 1380px;  
-  border: solid #638a87 10px;
+  border: solid #9f774d 2px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-right: 50px;
