@@ -26,6 +26,7 @@ iframe {
 
 .row {
   background-color: rgb(52, 135, 96);
+  opacity: 65%;
   padding: 10px;
   border: solid black 4px;
   border-radius: 25px;
@@ -78,7 +79,7 @@ a {
   color: var(--color-blue);
 }
 
-.floated-btn.whatsapp {
+.whatsapp_button {
   width: 150px;
   height: 45px;
   border-radius: 20px; 
@@ -104,7 +105,7 @@ a {
     bottom: 0;
     overflow: hidden;   
   }
-  .floated-btn.whatsapp {
+  .whatsapp_button {
     visibility: hidden;
   }
 }
