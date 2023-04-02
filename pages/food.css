@@ -1,9 +1,26 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background-image: url("../images/image-2.jpg");
+  background-image: url("../images/image-5.jpg");
+}
+
+.topnav {
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  padding-top: .7rem;
+  height: 3.5rem;
+}
+
+#home {
+  padding-top: .7rem;
+  height: 3.5rem;
 }
 
 iframe {
@@ -47,10 +64,12 @@ h1 {
 }
 
 a {
+  -webkit-tap-highlight-color: transparent;
   font-size: 18px; 
   font-family: sans-serif;
   text-decoration: none;
   color: white
+  
 }
 
 .footer {
