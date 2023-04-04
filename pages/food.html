@@ -7,28 +7,27 @@
       <title>Southside Catering Menu</title>
       <link rel="stylesheet" href="./food.css">
   </head>
+  
   <body>
-
-    <div class="topnav">
-      <a href="../index.html"><img id="home" src="../images/home.png" alt="home icon"></a></a>
-    </div>
-
     <h1> LIVE MENU  📍Current Location: @Southsea Common ☕︎ </h1>
     <div class="row"> 
       <div class="column">
-        <iframe id="menu1" src="../menu/firstMenu.txt"></iframe>
+        <iframe class="menu" src="../menu/firstMenu.txt"></iframe>
       </div>
       <div class="column">
-        <iframe id="menu2" src="../menu/secondMenu.txt"></iframe>
+        <iframe class="menu" src="../menu/secondMenu.txt"></iframe>
       </div>
       <div class="column">
-        <iframe id="menu3" src="../menu/firstMenu.txt"></iframe>
+        <iframe class="menu" src="../menu/firstMenu.txt"></iframe>
       </div>
       <div class="column">
-        <iframe id="menu4" src="../menu/secondMenu.txt"></iframe>
-      </div> 
+        <iframe class="menu" src="../menu/secondMenu.txt"></iframe>
+      </div>
+      <div class="column">
+        <iframe class="menu" src="../menu/firstMenu.txt"></iframe>
+      </div>
     </div>
-      <a title="Call us" target="_blank" href="https://wa.me/+447541552996">
+      <a title="Call us" target="_blank" href="https://wa.me/+447">
         <image class="whatsapp_button" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/WhatsApp_logo.svg"></image>
       </a> 
     <div class="footer">
@@ -36,6 +35,10 @@
       <a href="./food.html"><br>Menu</a> 
       <a href="./events.html"><br>Events</a>
     </div>
-    <script defer src="./food.js"></script>
+    <script defer>
+      window.onload = function() {
+        document.querySelectorAll('iframe').forEach( item => item.contentWindow.document.body.style = "color: white; font-size: 18px;")
+      };
+    </script>
   </body>
 </html>

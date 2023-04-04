@@ -21,7 +21,7 @@ body {
 
 #menu {
   padding-top: .7rem;
-  height: 3.5rem;
+  height: 2.5rem;
 }
 #home {
   padding-top: .7rem;
@@ -118,7 +118,7 @@ body {
 .join-us-section {
   color: white;
   height: 140px;
-  font-size: 17px;
+  font-size: 15px;
   --bg: #c8c8bc90; 
   padding-left: 10px;
   position: relative;
@@ -169,7 +169,7 @@ body {
 
 .as-we-begin-section {
   color: white;
-  height: 380px;  
+  height: 580px;  
   font-size: 14px;
   position: relative;
   display: flex;
@@ -231,4 +231,8 @@ a {
   right: 10px;
   display: block;
   font-weight: 500;
+}
+
+h4 {
+  font-size: medium;
 }
