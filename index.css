@@ -136,7 +136,7 @@ body {
 
 .a-brand-new-service_backdrop {
   z-index: 1;
-  height: 370px;
+  height: 270px;
   max-width: 1380px;  
   border: solid #9f774d 2px;
   border-top-right-radius: 25px;
@@ -147,6 +147,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  margin-bottom: 60px;
   --bg: #638a87 ;
   background-color: var(--bg, --color-black);
   transform: translateY(-100px);

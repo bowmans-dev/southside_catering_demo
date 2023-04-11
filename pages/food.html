@@ -8,8 +8,12 @@
       <link rel="stylesheet" href="./food.css">
   </head>
   
-  <body>
+  <body onload="myFunction(), styleIframe()" style="margin:0;">
+    <div id="loader"></div>
     <h1> LIVE MENU  📍Current Location: @Southsea Common ☕︎ </h1>
+    
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+      
     <div class="row"> 
       <div class="column">
         <iframe class="menu" src="../menu/firstMenu.txt"></iframe>
@@ -27,16 +31,30 @@
         <iframe class="menu" src="../menu/firstMenu.txt"></iframe>
       </div>
     </div>
-      <a title="Call us" target="_blank" href="https://wa.me/+447">
-        <image class="whatsapp_button" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/WhatsApp_logo.svg"></image>
-      </a> 
+
+    <a title="Call us" target="_blank" href="https://wa.me/+447">
+      <image class="whatsapp_button" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/WhatsApp_logo.svg"></image>
+    </a> 
     <div class="footer">
       <a href="../index.html"><br>Home</a>
       <a href="./food.html"><br>Menu</a> 
       <a href="./events.html"><br>Events</a>
     </div>
+
+  </div>
+    
     <script defer>
-      window.onload = function() {
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 500);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      function styleIframe() {
         document.querySelectorAll('iframe').forEach( item => item.contentWindow.document.body.style = "color: white; font-size: 18px;")
       };
     </script>
